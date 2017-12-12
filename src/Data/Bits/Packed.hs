@@ -111,6 +111,7 @@ getP prxy (UnsafeMkPacked vec) =
             word `shiftR` fromIntegral indexSlot
      in fromIntegral adjusted
 
+-- | Get the value at the given index out of the bitpacked vector.
 get
     :: forall n m a proxy bitSize div mod
     . ( KnownNat n
